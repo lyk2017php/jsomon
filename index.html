@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JSomon</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<div class="overlay">
+		<div class="content">
+			<img src="pokelogo.png" alt="JSomon - Pokemon Information System">
+			<h1>JSomon - Pokemon Information System</h1>
+			<p>LYK2017 - PHP Class</p>
+		</div>
+		</div>
+	</header>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="alert alert-warning" id="loading">Loading...</div>
+				<div class="list-group" id="pokelist">
+					
+				</div>
+				<nav aria-label="..." class="paginate">
+					<ul class="pager">
+						<li class="previous"><a href="#" class="change-page" id="prevPage">Previous</a></li>
+						<li class="next"><a href="#" class="change-page" id="nextPage">Next</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="col-md-8" >
+				<div class="alert alert-info" id="warning">
+					Please select a Pokémon
+				</div>
+				<div class="alert alert-info" id="pokeloading">Loading...</div>
+				<div id="pokedetail">
+					<h1><span id="pokemon_name"></span></h1>
+					<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="" id="pokemon_image">
+					<br>
+					Weight: <span id="weight"></span><br>
+					Height: <span id="height"></span><br>
+					Base Experience: <span id="base_experience"></span><br>
+					Types: <span id="types"></span><br>
+					<h2>Stats</h2>
+					<div id="pokestats">
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="script.js"></script>
+</body>
+</html>
