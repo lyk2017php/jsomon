@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	getList("http://pokeapi.co/api/v2/pokemon/");
+	getList("https://pokeapi.co/api/v2/pokemon/");
 });
 
 function getList(address) {
@@ -83,22 +83,8 @@ $(".change-page").bind('click', function(e){
 	}
 });
 
-
-
 $("#pokemon_image").hover(function(){
 	$(this).attr("src", $(this).data('shiny'));
 }, function(){
 	$(this).attr("src", $(this).data('default'));
 });
-
-
-
-
-
-
-
-
-
-
-
-
